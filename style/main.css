@@ -1,0 +1,27 @@
+@import "normalize.css"; /* normalize import*/
+
+
+
+@media screen and (max-width: 500px) /*change for mobile view port 500 px*/{ 
+    .grid-item { /*grid item and it's properties*/
+        background-color: rgb(179, 123, 123);
+        border: 3px dotted rgb(52, 12, 12);
+        padding: 10px;
+        font-size: 20px; }
+    .grid{ /*general grid properties */
+         display: grid;
+         grid-template-columns: auto auto;
+         background-color: rgb(126, 53, 53);
+         padding: 10px;
+        font-size: 25px; 
+        text-align: center;
+    }
+    
+            
+    .wide { /*wide image*/
+        grid-column: 1/ span 2  ;
+    }
+    .long { /*long image*/
+        grid-row: 4 /span 2 ;
+    }
+}
